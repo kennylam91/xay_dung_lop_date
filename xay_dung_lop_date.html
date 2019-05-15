@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay_dung_lop_date</title>
+</head>
+<body>
+<script>
+    function Date(day,month,year){
+        this.day=day;
+        this.month=month;
+        this.year=year;
+        this.getDay=function(){
+            return this.day;
+        };
+        this.getMonth=function(){
+            return this.month;
+        }
+        this.getYear=function(){
+            return this.year;
+        }
+        this.setDay=function(day){
+            this.day=day;
+        }
+        this.setMonth=function(month){
+            this.month=month;
+        }
+        this.setYear=function(year){
+            this.year=year;
+        }
+        this.setDate= function(day,month,year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        this.toString=function(){
+            let result=this.day +"/"+this.month+"/"+this.year;
+            return result;
+            }
+
+    }
+    let date1=new Date(15,5,2019);
+    document.write(date1.toString());
+</script>
+</body>
+</html>
